@@ -1,0 +1,464 @@
+/*Variáveis no CSS*/
+:root{
+    --brand: #FFCC00;
+    --brand-light: #FFE990;
+    --brand-dark: #CAA100;
+    --dark: #14141B;
+    --black: black;
+    --light: #DDDDDD;
+    --white: white;
+
+    --font-primary: "Inter",sans-serif;
+    --font-title: "Teko", sans-serif;
+
+    --spacing-sm: 12px;
+    --spacing: 24px;
+    --spacing-md: 48px;
+    --spacing-lg: 64px;
+    --spacing-xl: 128px;
+
+    --swiper-theme-color: var(--brand);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:"Inter",sans-serif;
+    background-color: var(--dark);
+    overflow-x: hidden; /*esconde a barra de rolagem horizontal*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-family: "Teko", sans-serif;
+    line-height: 90%;/*altura da linha*/
+    color:var(--white);
+}
+
+h2{
+    font-size: 48px;
+}
+
+p{
+    color: var(--light);
+    line-height: 130%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**************NAVEGAÇÃO EM ÂNCORA*******************/
+html {
+    scroll-behavior: smooth; /*aplica a suavidade à navegação em âncora*/
+}
+/**************NAVEGAÇÃO EM ÂNCORA*******************/
+
+.header{
+    background-color: black;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 3px solid var(--brand);
+    background-color: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(5px);
+
+    width: 100%;
+    position: fixed; /*stick*/
+    top: 0;
+    z-index: 1000;
+}
+
+/*Formatando o container que está dentro do header*/
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display:flex;
+    column-gap: 100px;
+}
+
+.menu a{
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: 18px;
+    text-transform: uppercase; /*letras maiúsculas*/
+
+   /* margin-left: 100px;*/
+}
+
+.menu a:hover{
+    color: var(--brand);
+}
+
+
+
+.hero{
+    height: 100vh;
+    background-image: url(../img/bg_hero.webp);
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.hero p{
+    font-size: 20px;
+    color: var(--light);
+    max-width: 832px;
+}
+
+.hero .slogan{
+    color:var(--brand);
+
+}
+
+.hero h1{
+    color: var(--white);
+    font-size: 112px;
+    line-height: 90%; /*altura da linha*/
+    margin-top: 10px;      
+    
+}
+
+.hero .container{
+    margin-top: 100px;
+}
+
+/************UTILS************/
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
+    
+.btn{
+    display: inline-block;
+    padding: 12px 48px;
+    /*background-color: var(--brand);*/
+    background-image: linear-gradient(to right, var(--brand), var(--brand-dark));
+    margin-top: 24px;
+    border-radius: 5px;
+    color: var(--dark);
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/************UTILS************/
+
+
+/************SOBRE***********/
+
+.sobre{
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/************SOBRE***********/
+
+/************MISSÃO**********/
+.missao{
+    background-image: url(../img/bg_missao.webp);
+    background-size: cover;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.missao p{
+    margin: 0;
+}
+/************MISSÃO**********/
+
+/***********ARTISTAS*********/
+
+.swiper-artistas {
+    padding-bottom: 40px;
+}
+
+.artistas{
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl)
+}
+
+.artistas p{
+    max-width: 546;
+}
+
+.artistas .cards figure{
+    position: relative; /*servir de referência para o absolute*/
+}
+
+.artistas .cards{
+    display: flex;
+    /*justify-content: space-between;*/
+    column-gap: var(--spacing);
+}
+
+.artistas .cards figcaption{
+    background-color: var(--brand);
+    color: var(--dark);
+    padding: 4px 10px;
+    border-radius: 3px;
+
+/*Posição em relação ao elemento pai
+(DESDE QUE ELE TAMBÉM TENHA POSITION), caso contrário será em relação ao body*/
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+
+/***********ARTISTAS*********/
+
+/***********AGENDE***********/
+.agende{
+    background-image: url(../img/bg_agende.webp);
+    background-size: cover;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.agende .content-agende{
+    max-width: 736;
+
+}
+.agende p{
+    margin: 0;
+}
+
+/***********AGENDE***********/
+
+/**********DEPOIMENTOS***********/
+.depoimentos{
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.depoimentos p{
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.depoimentos span{
+    color: var(--brand);
+    font-size: 14px;
+}
+
+/**********DEPOIMENTOS***********/
+
+/************FALE CONOSCO************/
+
+.fale-conosco {
+    background-color: var(--black);
+    padding: var(--spacing-xl) 0; /*vertical (top/bottom) horizontal (left//right)*/
+
+}
+
+.fale-conosco .container{
+    display: flex;
+    gap: var(--spacing);
+    align-items: center;
+}
+
+.content-fale-conosco ul{
+    color: var(--light);
+    line-height: 130%;
+    list-style-position: inside;
+    list-style-image: url(../img/list.svg);
+}
+/************FALE CONOSCO************/
+
+/***************FOOTER***************/
+
+.footer {
+    padding: var(--spacing-lg) 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .endereco {
+    max-width: 300px;
+}
+.footer p {
+    margin: 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer .icons {
+    display: flex;
+    gap: var(--spacing-sm)
+}
+
+/***************FOOTER***************/
+
+/*MEDIA QUERIES -> Condicionais para implementar mudanças no projeto*/
+
+@media (max-width: 1140px) {
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .menu {
+        /*display: none;*/
+        background-color: var(--black);
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 102px;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    /*Classe só será aplicada ao HTML quando o usuário clicar no botão*/
+
+    .menu-open{
+        transform: translate(0);
+    }
+
+     /*Classe só será aplicada ao HTML quando o usuário clicar no botão*/
+
+    .menu a {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-left: 12px;
+        border-bottom: 3px solid var(--brand-light)
+    }
+
+    .bar {
+        width: 40px;
+        height: 3px;
+        background-color: var(--white);
+        margin-bottom: 3px;
+        transition:0.5s;
+    }
+
+    /*Selecionando o primeiro filho*/
+    .x .bar:first-child{
+        transform: rotate(45deg) translate(0px, 5px);
+    }
+
+    /*Selecionando o filho de número 2*/
+    .x .bar:nth-child(2){
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    /*Selecionando o último filho*/
+    .x .bar:last-child{
+        transform: rotate(-45deg) translate(4px, -8px);
+    }
+
+    .hero {
+        height: auto;
+        min-height: 600px;
+        background-position: right; /*faz com que a imagem de fundo comece da direita pra esquerda*/
+    }
+
+    .hero h1 {
+        font-size: 64px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .sobre-image img {
+        width: 400px;
+        height: auto;
+    }
+
+    .mapa iframe {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    :root{
+        --spacing-xl: 64px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .sobre .container {
+        flex-direction: column;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .missao, .agende{
+        background-position: center;
+    }
+
+    .missao p, .agende p {
+        margin-top: 10px;
+    }
+
+    .fale-conosco .container {
+        flex-direction: column;
+    }
+
+    .depoimento p{
+        font-size: 16px;
+    }
+    
+    .mapa iframe{
+        max-width: 100%;
+        height: 400px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        row-gap: var(--spacing);
+    }
+
+}
+
+/*MEDIA QUERIES -> Condicionais para implementar mudanças no projeto*/
