@@ -2,7 +2,7 @@
 
 # 🌟 Blackline Tattoo Studio
 
-O **Blackline Tattoo Studio** é um site institucional moderno, totalmente responsivo e interativo projetado para um estúdio de tatuagem especializado em arte autoral. A interface utiliza uma estética dark com alto contraste para transmitir a identidade forte do estúdio, aliando design imersivo a uma excelente experiência de navegação (UI/UX).
+O **Blackline Tattoo Studio** é um site institucional moderno, totalmente responsivo e interativo projetado para um estúdio fictício de tatuagem especializado em arte autoral. A interface utiliza uma estética dark com alto contraste para transmitir a identidade forte do estúdio, aliando design imersivo a uma excelente experiência de navegação (UI/UX).
 
 ## 🚀 Funcionalidades Principais
 * **Landing Page de Alto Impacto:** Hero section visualmente marcante com chamadas para ação (CTA) focadas em conversão.
