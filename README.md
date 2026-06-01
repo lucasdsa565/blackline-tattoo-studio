@@ -15,7 +15,7 @@ O **Blackline Tattoo Studio** é um site institucional moderno, totalmente respo
 ## 🛠️ Tecnologias Utilizadas
 * **HTML:** Estruturação semântica do conteúdo.
 * **CSS:** Estilização avançada com layouts modernos (Flexbox/CSS Grid), paleta de cores personalizada e responsividade (Media Queries).
-* **JavaScript (Vanilla):** Responsável pela lógica de interatividade da página, incluindo a abertura/fechamento do menu mobile e o funcionamento dos sliders de depoimentos.
+* **JavaScript:** Responsável pela lógica de interatividade da página, incluindo a abertura/fechamento do menu mobile e o funcionamento dos sliders de depoimentos.
 
 ## 📱 Responsividade & Interatividade
 O projeto foi desenvolvido sob o conceito de design responsivo, garantindo uma transição suave entre resoluções de desktop e smartphones. O uso de JavaScript garante que elementos de interface (como o menu de navegação em telas menores) funcionem de forma leve e nativa.
